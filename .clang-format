@@ -1,0 +1,11 @@
+﻿---
+BasedOnStyle: Microsoft
+IndentCaseLabels: 'true'
+IndentWidth: '4'
+KeepEmptyLinesAtTheStartOfBlocks: 'true'
+Language: Cpp
+SpacesInParentheses: 'false'
+TabWidth: '4'
+UseTab: Never
+
+...
