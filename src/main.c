@@ -19,7 +19,11 @@ int main(void)
     int integer = 0;
     char *roman_s = NULL;
 
-    if (integer_to_roman(integer, &roman_s) == 0)
+    printf("Enter an integer:\n");
+    scanf("%d", &integer);
+    roman_s = integer_to_roman(integer);
+
+    if (roman_s != NULL)
     {
         printf(roman_s);
     }
