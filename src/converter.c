@@ -1,15 +1,37 @@
-/**
- * @brief
- *
- * @param integer
- * @param roman_s
- * @return int
- */
-
 #include "converter.h"
 
 #include <stdlib.h>
 
+/**
+ * TODO : refactor to only use one fonction to add roman character like this instead of duplicated code :
+ * char * add_simple_character(char *roman_s,, char char c, int *integer, int *index)
+ * char * add_double_character(char *roman_s, c1, char c2, int *integer, int *index)
+ */
+
+/**
+ * TODO : use a struct array to describe the roman/numeral conversion ? :
+ * struct
+ * {
+ *      bool is_double;
+ *      int numeral_value;
+ *      char c1;
+ *      char c2;
+ * }
+ * [] = {
+ * {false, 1000, "M", "\0"},
+ * {true, 900, "C", "M"},
+ * etc...
+ * };
+ * And use it inside a single block of code instead of if/else if/else if etc...
+ *
+ */
+
+/**
+ * @brief Convert an integer into a roman numeral value
+ *
+ * @param integer : integer to convert
+ * @return char* : roman numeral value if no error, else return NULL
+ */
 char *integer_to_roman(int integer)
 {
     int index = 0;
