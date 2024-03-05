@@ -96,6 +96,7 @@ char *integer_to_roman(int integer)
                     integer -= 500;
                 }
             }
+            // CD = 400
             else if (integer >= 400)
             {
                 // extend char array
@@ -110,6 +111,7 @@ char *integer_to_roman(int integer)
                     integer -= 400;
                 }
             }
+            // C = 100
             else if (integer >= 100)
             {
                 // extend char array
@@ -123,6 +125,7 @@ char *integer_to_roman(int integer)
                     integer -= 100;
                 }
             }
+            // XC = 90
             else if (integer >= 90)
             {
                 // extend char array
@@ -137,6 +140,7 @@ char *integer_to_roman(int integer)
                     integer -= 90;
                 }
             }
+            // L = 50
             else if (integer >= 50)
             {
                 // extend char array
@@ -150,6 +154,7 @@ char *integer_to_roman(int integer)
                     integer -= 50;
                 }
             }
+            // XL =40
             else if (integer >= 40)
             {
                 // extend char array
@@ -164,6 +169,7 @@ char *integer_to_roman(int integer)
                     integer -= 40;
                 }
             }
+            // X = 10
             else if (integer >= 10)
             {
                 // extend char array
@@ -177,6 +183,7 @@ char *integer_to_roman(int integer)
                     integer -= 10;
                 }
             }
+            // IX = 9
             else if (integer >= 9)
             {
                 // extend char array
@@ -191,6 +198,7 @@ char *integer_to_roman(int integer)
                     integer -= 9;
                 }
             }
+            // V = 5
             else if (integer >= 5)
             {
                 // extend char array
@@ -204,6 +212,7 @@ char *integer_to_roman(int integer)
                     integer -= 5;
                 }
             }
+            // IV = 4
             else if (integer >= 4)
             {
                 // extend char array
@@ -218,6 +227,7 @@ char *integer_to_roman(int integer)
                     integer -= 4;
                 }
             }
+            // I = 1
             else if (integer >= 1)
             {
                 // extend char array
