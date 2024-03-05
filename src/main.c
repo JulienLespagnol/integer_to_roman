@@ -16,15 +16,28 @@
 
 int main(void)
 {
+    int error_code = 0;
     int integer = 0;
     char *roman_s = NULL;
 
-    if (integer_to_roman(integer, &roman_s) == 0)
+    printf("Enter an integer:\n");
+    error_code = scanf("%d", &integer);
+
+    if (error_code <= 0)
     {
-        printf(roman_s);
+        printf("Error : enter an integer.");
     }
     else
     {
-        printf("Error during conversion");
+        roman_s = integer_to_roman(integer);
+
+        if (roman_s == NULL)
+        {
+            printf("Error : error during conversion, probably bad integer (0 or > 3999)");
+        }
+        else
+        {
+            printf(roman_s);
+        }
     }
 }
