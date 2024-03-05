@@ -1,15 +1,26 @@
+/**
+ * @file converter.c
+ * @author Julien Lespagnol (lespagnolj@gmail.com)
+ * @brief
+ * @version 0.1
+ * @date 2024-03-04
+ *
+ * @copyright Copyright (c) 2024
+ *
+ */
+
 #include "converter.h"
 
 #include <stdlib.h>
 
 /**
- * TODO : refactor to only use one fonction to add roman character like this instead of duplicated code :
- * char * add_simple_character(char *roman_s,, char char c, int *integer, int *index)
- * char * add_double_character(char *roman_s, c1, char c2, int *integer, int *index)
+ * TODO : refactor to only use two fonctions to add roman character like this instead of duplicated code :
+ * char * add_simple_character(char *roman_s, char char c, int numeral_value, int *integer, int *index)
+ * char * add_double_character(char *roman_s, c1, char c2, int numeral_value, int *integer, int *index)
  */
 
 /**
- * TODO : use a struct array to describe the roman/numeral conversion ? :
+ * TODO : use a struct array to describe the integer/roman numeral conversion ? :
  * struct
  * {
  *      bool is_double;
@@ -18,8 +29,8 @@
  *      char c2;
  * }
  * [] = {
- * {false, 1000, "M", "\0"},
- * {true, 900, "C", "M"},
+ *      {false, 1000, "M", "\0"},
+ *      {true, 900, "C", "M"},
  * etc...
  * };
  * And use it inside a single block of code instead of if/else if/else if etc...
